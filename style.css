@@ -1,0 +1,118 @@
+
+* {
+  box-sizing: border-box;
+}
+
+
+
+
+
+:root{
+
+--main-header-color:brown;
+--secondary-color:lightcoral;
+--font-family:Times New Rowan;
+--header-page-width:460px;
+--header-page-height:400px;
+--photo-page-height:300px;
+--photo-page-width:300px;
+
+}
+
+
+
+
+
+
+
+@media screen and (min-width: 900px) {
+.header 
+{
+  
+  
+  float: left;
+ 
+  
+ 
+  border-radius: 1px solid black;
+  padding-left:30px;
+  margin-top: 0px;
+  padding-top: 0px;
+  height:var(--header-page-height);
+  
+ 
+ 
+  
+  
+
+}
+}
+
+h1 {
+    color:yellow;
+    background-color:var(--main-header-color);
+    border-radius: 1px solid black;
+    width:var(--header-page-width);
+    height: var(--photo-page-height);
+    
+   
+    
+ 
+}
+
+
+
+
+
+.photo-gallery{
+
+
+  
+    display: -ms-flexbox; 
+    display: flex;
+    -ms-flex-wrap: wrap; 
+    flex-wrap: wrap;
+    padding: 10 34px;
+    padding-top:9px;
+  }
+  
+
+
+
+
+.column img {
+
+
+  margin-top: 8px;
+  vertical-align: middle;
+  width: 100%;
+  }
+
+
+  .column
+  {
+    -ms-flex: 25%; 
+    flex: 25%;
+    max-width: 25%;
+    padding: 0 4px;
+  }
+ 
+  
+
+
+  @media screen and (max-width: 800px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
+  
+ 
+  @media screen and (max-width: 600px) {
+    .column {
+      -ms-flex: 100%;
+      flex: 100%;
+      max-width: 100%;
+    }
+  }
